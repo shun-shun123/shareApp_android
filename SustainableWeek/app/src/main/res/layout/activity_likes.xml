@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cream"
+    tools:context="com.example.shunsukesaito.sustainableweek.MainActivity">
+
+    <!--Top Title Bar -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relLayout1">
+
+        <include layout="@layout/layout_top_title_bar"/>
+
+
+    </RelativeLayout>
+
+
+    <!-- Middle Contents Fragment -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relLayout2"
+        android:layout_below="@+id/relLayout1">
+
+
+
+
+
+    </RelativeLayout>
+
+    <!-- Navigation Bar -->
+
+
+
+    <include layout="@layout/layout_bottom_navigation_bar"/>
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

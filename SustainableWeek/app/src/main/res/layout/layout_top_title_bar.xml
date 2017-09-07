@@ -1,0 +1,31 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/TopLeargeTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:text="SUSTAINABLE WEEK"/>
+
+        <TextView
+            android:id="@+id/TopSmallTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@+id/TopLeargeTitle"
+            android:textSize="10dp"
+            android:text="SUSTAINABLE WEEK SUPPURT SDGs"/>
+
+
+
+
+    </RelativeLayout>
+
+
+</merge>

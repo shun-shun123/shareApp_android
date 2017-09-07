@@ -1,0 +1,168 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/container"
+        >
+
+        <ImageButton
+            android:id="@+id/icon1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pic_01"
+            android:src="@drawable/pic_01"
+            android:layout_marginLeft="193dp"
+            android:layout_marginTop="39dp"/>
+
+        <ImageButton
+            android:id="@+id/icon2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pic_02"
+            android:src="@drawable/pic_02"
+            android:layout_marginLeft="227dp"
+            android:layout_marginTop="70dp"/>
+
+        <ImageButton
+            android:id="@+id/icon3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pic_03"
+            android:src="@drawable/pic_03"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="107dp"/>
+
+        <ImageButton
+            android:id="@+id/icon4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pic_04"
+            android:src="@drawable/pic_04"
+            android:layout_marginLeft="267dp"
+            android:layout_marginTop="149dp"/>
+
+        <ImageButton
+            android:id="@+id/icon5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pic_05"
+            android:src="@drawable/pic_05"
+            android:layout_marginLeft="272dp"
+            android:layout_marginTop="198dp"/>
+
+        <ImageButton
+            android:id="@+id/icon6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pic_06"
+            android:src="@drawable/pic_06"
+            android:layout_marginLeft="260dp"
+            android:layout_marginTop="243dp"/>
+
+        <ImageButton
+            android:id="@+id/icon7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pic_07"
+            android:src="@drawable/pic_07"
+            android:layout_marginLeft="241dp"
+            android:layout_marginTop="258dp"/>
+
+        <ImageButton
+            android:id="@+id/icon8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pic_08"
+            android:src="@drawable/pic_08"
+            android:layout_marginLeft="214dp"
+            android:layout_marginTop="277dp"/>
+
+        <ImageButton
+            android:id="@+id/icon9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pic_09"
+            android:src="@drawable/pic_09"
+            android:layout_marginLeft="173dp"
+            android:layout_marginTop="287dp"/>
+
+        <ImageButton
+            android:id="@+id/icon10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pic_10"
+            android:src="@drawable/pic_10"
+            android:layout_marginLeft="122dp"
+            android:layout_marginTop="278dp"/>
+
+        <ImageButton
+            android:id="@+id/icon11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pic_11"
+            android:src="@drawable/pic_11"
+            android:layout_marginLeft="66dp"
+            android:layout_marginTop="260dp"/>
+
+
+        <ImageButton
+            android:id="@+id/icon12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pic_12"
+            android:src="@drawable/pic_12"
+            android:layout_marginLeft="38dp"
+            android:layout_marginTop="234dp"/>
+
+        <ImageButton
+            android:id="@+id/icon13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pic_13"
+            android:src="@drawable/pic_13"
+            android:layout_marginLeft="21dp"
+            android:layout_marginTop="200dp"/>
+
+        <ImageButton
+            android:id="@+id/icon14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pic_14"
+            android:src="@drawable/pic_14"
+            android:layout_marginLeft="31dp"
+            android:layout_marginTop="148dp"/>
+
+        <ImageButton
+            android:id="@+id/icon15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pic_15"
+            android:src="@drawable/pic_15"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="88dp"/>
+
+        <ImageButton
+            android:id="@+id/icon16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pic_16"
+            android:src="@drawable/pic_16"
+            android:layout_marginLeft="96dp"
+            android:layout_marginTop="49dp"/>
+
+        <ImageButton
+            android:id="@+id/icon17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pic_17"
+            android:src="@drawable/pic_17"
+            android:layout_marginLeft="148dp"
+            android:layout_marginTop="40dp"/>
+
+
+    </RelativeLayout>
+
+
+</merge>
