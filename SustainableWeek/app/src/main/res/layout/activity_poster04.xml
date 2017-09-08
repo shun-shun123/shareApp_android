@@ -6,6 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/cream"
+    android:clipChildren="false"
+    android:clipToPadding="false"
     tools:context="com.example.shunsukesaito.sustainableweek.ThreeMainActivities.MainActivity">
 
     <!--Top Title Bar -->
@@ -25,9 +27,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/relLayout2"
-        android:layout_below="@+id/relLayout1">
+        android:layout_below="@+id/relLayout1"
+        android:clipChildren="false"
+        android:clipToPadding="false">
 
-        <include layout="@layout/layout_likes_center"/>
+        <ImageView
+            android:src="@drawable/poster_04"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
 
 
 

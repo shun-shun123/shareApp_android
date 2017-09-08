@@ -58,7 +58,7 @@
             android:background="@drawable/pic_06"
             android:src="@drawable/pic_06"
             android:layout_marginLeft="260dp"
-            android:layout_marginTop="253dp"/>
+            android:layout_marginTop="243dp"/>
 
         <ImageButton
             android:id="@+id/icon7"
