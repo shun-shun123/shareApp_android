@@ -1,4 +1,4 @@
-package com.example.shunsukesaito.sustainableweek;
+package com.example.shunsukesaito.sustainableweek.Utils;
 
 import android.content.Context;
 import android.content.Intent;
@@ -6,6 +6,10 @@ import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.view.MenuItem;
 
+import com.example.shunsukesaito.sustainableweek.R;
+import com.example.shunsukesaito.sustainableweek.ThreeMainActivities.LikesActivity;
+import com.example.shunsukesaito.sustainableweek.ThreeMainActivities.MainActivity;
+import com.example.shunsukesaito.sustainableweek.ThreeMainActivities.MapActivity;
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 
 /**
