@@ -9,7 +9,23 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
 
-import com.example.shunsukesaito.sustainableweek.Poster01;
+import com.example.shunsukesaito.sustainableweek.Posters.Poster01;
+import com.example.shunsukesaito.sustainableweek.Posters.Poster02;
+import com.example.shunsukesaito.sustainableweek.Posters.Poster03;
+import com.example.shunsukesaito.sustainableweek.Posters.Poster04;
+import com.example.shunsukesaito.sustainableweek.Posters.Poster05;
+import com.example.shunsukesaito.sustainableweek.Posters.Poster06;
+import com.example.shunsukesaito.sustainableweek.Posters.Poster07;
+import com.example.shunsukesaito.sustainableweek.Posters.Poster08;
+import com.example.shunsukesaito.sustainableweek.Posters.Poster09;
+import com.example.shunsukesaito.sustainableweek.Posters.Poster10;
+import com.example.shunsukesaito.sustainableweek.Posters.Poster11;
+import com.example.shunsukesaito.sustainableweek.Posters.Poster12;
+import com.example.shunsukesaito.sustainableweek.Posters.Poster13;
+import com.example.shunsukesaito.sustainableweek.Posters.Poster14;
+import com.example.shunsukesaito.sustainableweek.Posters.Poster15;
+import com.example.shunsukesaito.sustainableweek.Posters.Poster16;
+import com.example.shunsukesaito.sustainableweek.Posters.Poster17;
 import com.example.shunsukesaito.sustainableweek.Utils.BottomNavigationViewHelper;
 import com.example.shunsukesaito.sustainableweek.R;
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
@@ -32,82 +48,82 @@ public class MainActivity extends AppCompatActivity {
                     break;
 
                 case R.id.icon2:
-                    Intent intent02 = new Intent(MainActivity.this, Poster01.class);
+                    Intent intent02 = new Intent(MainActivity.this, Poster02.class);
                     startActivity(intent02);
                     break;
 
                 case R.id.icon3:
-                    Intent intent03 = new Intent(MainActivity.this, Poster01.class);
+                    Intent intent03 = new Intent(MainActivity.this, Poster03.class);
                     startActivity(intent03);
                     break;
 
                 case R.id.icon4:
-                    Intent intent04 = new Intent(MainActivity.this, Poster01.class);
+                    Intent intent04 = new Intent(MainActivity.this, Poster04.class);
                     startActivity(intent04);
                     break;
 
                 case R.id.icon5:
-                    Intent intent05 = new Intent(MainActivity.this, Poster01.class);
+                    Intent intent05 = new Intent(MainActivity.this, Poster05.class);
                     startActivity(intent05);
                     break;
 
                 case R.id.icon6:
-                    Intent intent06 = new Intent(MainActivity.this, Poster01.class);
+                    Intent intent06 = new Intent(MainActivity.this, Poster06.class);
                     startActivity(intent06);
                     break;
 
                 case R.id.icon7:
-                    Intent intent07 = new Intent(MainActivity.this, Poster01.class);
+                    Intent intent07 = new Intent(MainActivity.this, Poster07.class);
                     startActivity(intent07);
                     break;
 
                 case R.id.icon8:
-                    Intent intent08 = new Intent(MainActivity.this, Poster01.class);
+                    Intent intent08 = new Intent(MainActivity.this, Poster08.class);
                     startActivity(intent08);
                     break;
 
                 case R.id.icon9:
-                    Intent intent09 = new Intent(MainActivity.this, Poster01.class);
+                    Intent intent09 = new Intent(MainActivity.this, Poster09.class);
                     startActivity(intent09);
                     break;
 
                 case R.id.icon10:
-                    Intent intent10 = new Intent(MainActivity.this, Poster01.class);
+                    Intent intent10 = new Intent(MainActivity.this, Poster10.class);
                     startActivity(intent10);
                     break;
 
                 case R.id.icon11:
-                    Intent intent11 = new Intent(MainActivity.this, Poster01.class);
+                    Intent intent11 = new Intent(MainActivity.this, Poster11.class);
                     startActivity(intent11);
                     break;
 
                 case R.id.icon12:
-                    Intent intent12 = new Intent(MainActivity.this, Poster01.class);
+                    Intent intent12 = new Intent(MainActivity.this, Poster12.class);
                     startActivity(intent12);
                     break;
 
                 case R.id.icon13:
-                    Intent intent13 = new Intent(MainActivity.this, Poster01.class);
+                    Intent intent13 = new Intent(MainActivity.this, Poster13.class);
                     startActivity(intent13);
                     break;
 
                 case R.id.icon14:
-                    Intent intent14 = new Intent(MainActivity.this, Poster01.class);
+                    Intent intent14 = new Intent(MainActivity.this, Poster14.class);
                     startActivity(intent14);
                     break;
 
                 case R.id.icon15:
-                    Intent intent15 = new Intent(MainActivity.this, Poster01.class);
+                    Intent intent15 = new Intent(MainActivity.this, Poster15.class);
                     startActivity(intent15);
                     break;
 
                 case R.id.icon16:
-                    Intent intent16 = new Intent(MainActivity.this, Poster01.class);
+                    Intent intent16 = new Intent(MainActivity.this, Poster16.class);
                     startActivity(intent16);
                     break;
 
                 case R.id.icon17:
-                    Intent intent17 = new Intent(MainActivity.this, Poster01.class);
+                    Intent intent17 = new Intent(MainActivity.this, Poster17.class);
                     startActivity(intent17);
                     break;
             }
