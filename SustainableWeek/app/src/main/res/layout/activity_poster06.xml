@@ -36,21 +36,4 @@
 
     </RelativeLayout>
 
-    <!-- Navigation Bar -->
-
-
-
-    <include layout="@layout/layout_bottom_navigation_bar"/>
-
-
-
-
-
-
-
-
-
-
-
-
 </RelativeLayout>
