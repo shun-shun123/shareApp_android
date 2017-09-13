@@ -3,7 +3,8 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_alignParentTop="true">
+        android:layout_alignParentTop="true"
+        android:background="@drawable/white_grey_border_bottom">
 
         <TextView
             android:id="@+id/TopLeargeTitle"

@@ -4,4 +4,6 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="cream">#fffeed</color>
+    <color name="white">#ffffff</color>
+    <color name="grey">#3f3f3f</color>
 </resources>

@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageButton;
 
 import com.example.shunsukesaito.sustainableweek.Posters.Poster01;
@@ -36,6 +38,8 @@ public class MainActivity extends AppCompatActivity {
 
     private static final int ACTIVITY_NUM = 1;
 
+    Animation animation;
+
     View.OnClickListener iconClickListener = new View.OnClickListener() {
 
         @Override
@@ -43,86 +47,103 @@ public class MainActivity extends AppCompatActivity {
             int id = view.getId();
             switch (id){
                 case R.id.icon1:
+                    view.startAnimation(animation);
                     Intent intent01 = new Intent(MainActivity.this, Poster01.class);
                     startActivity(intent01);
                     break;
 
                 case R.id.icon2:
+                    view.startAnimation(animation);
                     Intent intent02 = new Intent(MainActivity.this, Poster02.class);
                     startActivity(intent02);
                     break;
 
                 case R.id.icon3:
+                    view.startAnimation(animation);
                     Intent intent03 = new Intent(MainActivity.this, Poster03.class);
                     startActivity(intent03);
                     break;
 
                 case R.id.icon4:
+                    view.startAnimation(animation);
                     Intent intent04 = new Intent(MainActivity.this, Poster04.class);
                     startActivity(intent04);
                     break;
 
                 case R.id.icon5:
+                    view.startAnimation(animation);
                     Intent intent05 = new Intent(MainActivity.this, Poster05.class);
                     startActivity(intent05);
                     break;
 
                 case R.id.icon6:
+                    view.startAnimation(animation);
                     Intent intent06 = new Intent(MainActivity.this, Poster06.class);
                     startActivity(intent06);
                     break;
 
                 case R.id.icon7:
+                    view.startAnimation(animation);
                     Intent intent07 = new Intent(MainActivity.this, Poster07.class);
                     startActivity(intent07);
                     break;
 
                 case R.id.icon8:
+                    view.startAnimation(animation);
                     Intent intent08 = new Intent(MainActivity.this, Poster08.class);
                     startActivity(intent08);
                     break;
 
                 case R.id.icon9:
+                    view.startAnimation(animation);
                     Intent intent09 = new Intent(MainActivity.this, Poster09.class);
                     startActivity(intent09);
                     break;
 
                 case R.id.icon10:
+                    view.startAnimation(animation);
                     Intent intent10 = new Intent(MainActivity.this, Poster10.class);
                     startActivity(intent10);
                     break;
 
                 case R.id.icon11:
+                    view.startAnimation(animation);
                     Intent intent11 = new Intent(MainActivity.this, Poster11.class);
                     startActivity(intent11);
                     break;
 
                 case R.id.icon12:
+                    view.startAnimation(animation);
                     Intent intent12 = new Intent(MainActivity.this, Poster12.class);
                     startActivity(intent12);
                     break;
 
                 case R.id.icon13:
+                    view.startAnimation(animation);
                     Intent intent13 = new Intent(MainActivity.this, Poster13.class);
                     startActivity(intent13);
                     break;
 
                 case R.id.icon14:
+                    view.startAnimation(animation);
                     Intent intent14 = new Intent(MainActivity.this, Poster14.class);
                     startActivity(intent14);
                     break;
 
                 case R.id.icon15:
+                    view.startAnimation(animation);
                     Intent intent15 = new Intent(MainActivity.this, Poster15.class);
                     startActivity(intent15);
                     break;
 
                 case R.id.icon16:
+                    view.startAnimation(animation);
                     Intent intent16 = new Intent(MainActivity.this, Poster16.class);
                     startActivity(intent16);
                     break;
 
                 case R.id.icon17:
+                    view.startAnimation(animation);
                     Intent intent17 = new Intent(MainActivity.this, Poster17.class);
                     startActivity(intent17);
                     break;
@@ -175,6 +196,8 @@ public class MainActivity extends AppCompatActivity {
         icon16.setOnClickListener(iconClickListener);
         icon17.setOnClickListener(iconClickListener);
 
+
+        animation = AnimationUtils.loadAnimation(this,R.anim.anim);
 
 
     }
