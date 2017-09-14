@@ -4,14 +4,18 @@ import com.nifty.cloud.mb.core.DoneCallback;
 import com.nifty.cloud.mb.core.NCMB;
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.media.Image;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.ScaleAnimation;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -35,7 +39,7 @@ public class LikesActivity extends AppCompatActivity {
     //現在のLikes数を表示するためのテキストビュー
     TextView counter;
     //Likes数を増やすためのボタン
-    Button likes;
+     ImageButton likes;
     //選択中の団体名を表示するためのテキストビュー
     TextView organization;
 
@@ -87,7 +91,7 @@ public class LikesActivity extends AppCompatActivity {
          */
         connect = (Button) findViewById(R.id.connect);
         counter = (TextView) findViewById(R.id.counter);
-        likes = (Button) findViewById(R.id.likes);
+        likes = (ImageButton) findViewById(R.id.likes);
         organization = (TextView) findViewById(R.id.organization);
 
 
@@ -98,6 +102,7 @@ public class LikesActivity extends AppCompatActivity {
         likes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                onLikesPushedAnimation(view);
                 AllLikes++;
                 counter.setText(String.valueOf(AllLikes) );
             }
@@ -153,4 +158,22 @@ public class LikesActivity extends AppCompatActivity {
         menuItem.setChecked(true);
 
     }
+
+
+    /**
+     * いいねボタンを押した時のアニメーションを行うためのメソッド
+     * @param view
+     * viewは引数として受け取るImageButton（いいねボタン）
+     */
+    public void onLikesPushedAnimation(View view){
+        ScaleAnimation scaleAnimation = new ScaleAnimation(1.0f,1.3f,1.0f,1.3f,view.getWidth()/2,view.getHeight()/2);
+        scaleAnimation.setDuration(100);
+        scaleAnimation.setFillAfter(false);
+        view.startAnimation(scaleAnimation);
+    }
+
+
 }
+
+
+
