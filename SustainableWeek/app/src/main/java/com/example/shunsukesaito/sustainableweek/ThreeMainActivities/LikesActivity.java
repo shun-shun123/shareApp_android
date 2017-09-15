@@ -35,7 +35,7 @@ public class LikesActivity extends AppCompatActivity {
     public int AllLikes = 1;
 
     //Mbaasサーバとコネクトするためのボタン
-    Button connect;
+    ImageButton connect;
     //現在のLikes数を表示するためのテキストビュー
     TextView counter;
     //Likes数を増やすためのボタン
@@ -56,12 +56,30 @@ public class LikesActivity extends AppCompatActivity {
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1);
         adapter.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
 
+
+        adapter.add("MERCI");
+        adapter.add("水質研究セミナー");
         adapter.add("STEP");
+        adapter.add("haconiwa");
+        adapter.add("Reco.lab");
+        adapter.add("Acoustic Guitar Circle");
+        adapter.add("PASTEL");
+        adapter.add("Dive in Blue");
+        adapter.add("FB+1");
+        adapter.add("Song Genics");
         adapter.add("watnow");
-        adapter.add("草津天文研究会");
+        adapter.add("Ritree");
+        adapter.add("DANDELION");
+        adapter.add("Color Guard Circle Laster");
+        adapter.add("ivusa");
+        adapter.add("世界報道写真展");
+        adapter.add("くさてん");
+        adapter.add("BKCI");
+        adapter.add("月光斜");
         adapter.add("SOIL&SOUL");
+        adapter.add("color free");
         adapter.add("RRST");
-        adapter.add("Tisa");
+        adapter.add("EMH PROJECT");
 
         final Spinner spinner = (Spinner) findViewById(R.id.spinner);
         spinner.setAdapter(adapter);
@@ -89,7 +107,7 @@ public class LikesActivity extends AppCompatActivity {
         /**
          * 使うViewウィジェットの初期化
          */
-        connect = (Button) findViewById(R.id.connect);
+        connect = (ImageButton) findViewById(R.id.connect);
         counter = (TextView) findViewById(R.id.counter);
         likes = (ImageButton) findViewById(R.id.likes);
         organization = (TextView) findViewById(R.id.organization);
@@ -102,7 +120,7 @@ public class LikesActivity extends AppCompatActivity {
         likes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                onLikesPushedAnimation(view);
+                onPushedAnimation(view);
                 AllLikes++;
                 counter.setText(String.valueOf(AllLikes) );
             }
@@ -117,6 +135,7 @@ public class LikesActivity extends AppCompatActivity {
                 int likes = Integer.parseInt(counter.getText().toString());
                 String key = organization.getText().toString();
                 NCMBObject obj = new NCMBObject("SaveObjectTest");
+                onPushedAnimation(view);
                 obj.put("key",key);
                 obj.put("value",likes);
                 obj.saveInBackground(new DoneCallback() {
@@ -124,14 +143,12 @@ public class LikesActivity extends AppCompatActivity {
                     public void done(NCMBException e) {
                         if (e != null) {
                             //エラー発生時の処理
-                            Toast toast = Toast.makeText(LikesActivity.this,"失敗",Toast.LENGTH_LONG);
-                            toast.setMargin(100,100);
+                            Toast toast = Toast.makeText(LikesActivity.this,"送信失敗",Toast.LENGTH_LONG);
                             toast.show();
                         } else {
 
                             //成功時の処理
-                            Toast toast = Toast.makeText(LikesActivity.this,"成功",Toast.LENGTH_SHORT);
-                            toast.setMargin(100,100);
+                            Toast toast = Toast.makeText(LikesActivity.this,"送信完了",Toast.LENGTH_SHORT);
                             toast.show();
                             counter.setText(String.valueOf(0) );
                             AllLikes = 0;
@@ -165,7 +182,7 @@ public class LikesActivity extends AppCompatActivity {
      * @param view
      * viewは引数として受け取るImageButton（いいねボタン）
      */
-    public void onLikesPushedAnimation(View view){
+    public void onPushedAnimation(View view){
         ScaleAnimation scaleAnimation = new ScaleAnimation(1.0f,1.3f,1.0f,1.3f,view.getWidth()/2,view.getHeight()/2);
         scaleAnimation.setDuration(100);
         scaleAnimation.setFillAfter(false);
