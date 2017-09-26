@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageView;
 
 import com.example.shunsukesaito.sustainableweek.Utils.BottomNavigationViewHelper;
 import com.example.shunsukesaito.sustainableweek.R;

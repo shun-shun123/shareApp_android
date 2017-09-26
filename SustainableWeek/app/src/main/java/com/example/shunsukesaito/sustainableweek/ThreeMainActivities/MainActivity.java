@@ -9,6 +9,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.Button;
 import android.widget.ImageButton;
 
 import com.example.shunsukesaito.sustainableweek.Posters.Poster01;
@@ -30,6 +31,7 @@ import com.example.shunsukesaito.sustainableweek.Posters.Poster16;
 import com.example.shunsukesaito.sustainableweek.Posters.Poster17;
 import com.example.shunsukesaito.sustainableweek.Utils.BottomNavigationViewHelper;
 import com.example.shunsukesaito.sustainableweek.R;
+import com.example.shunsukesaito.sustainableweek.Utils.ConnectActivity;
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 
 public class MainActivity extends AppCompatActivity {
@@ -158,6 +160,36 @@ public class MainActivity extends AppCompatActivity {
 
         setupBottomNavigationView();
 
+
+
+
+
+
+
+        Button button = (Button)findViewById(R.id.id);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, ConnectActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         //ImageButtonをとにかく生成
         ImageButton icon01 = (ImageButton) findViewById(R.id.icon1);
         ImageButton icon02 = (ImageButton) findViewById(R.id.icon2);
@@ -211,5 +243,6 @@ public class MainActivity extends AppCompatActivity {
         menuItem.setChecked(true);
 
     }
+
 
 }

@@ -32,7 +32,7 @@ public class LikesActivity extends AppCompatActivity {
 
     private static final int ACTIVITY_NUM = 0;
 
-    public int AllLikes = 1;
+    public int AllLikes = 0;
 
     //Mbaasサーバとコネクトするためのボタン
     ImageButton connect;
