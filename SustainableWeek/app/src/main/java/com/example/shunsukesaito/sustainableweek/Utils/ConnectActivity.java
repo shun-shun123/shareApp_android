@@ -3,6 +3,7 @@ package com.example.shunsukesaito.sustainableweek.Utils;
 import android.nfc.Tag;
 import android.os.AsyncTask;
 import android.support.v4.app.LoaderManager;
+import android.support.v4.content.Loader;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -11,16 +12,29 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
+import com.example.shunsukesaito.sustainableweek.JsonGetter;
 import com.example.shunsukesaito.sustainableweek.R;
 
 
+import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.net.URL;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-public class ConnectActivity extends AppCompatActivity implements LoaderManager.LoaderCallbacks<JSONObject> {
+public class ConnectActivity extends AppCompatActivity{
+
+    String str;
+
+    String names[] = new String[17];
+    String each_like[] = new String[17];
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,9 +86,60 @@ public class ConnectActivity extends AppCompatActivity implements LoaderManager.
                     }
                 }.execute();
 
+                Log.d("Fucker", "onClick: ");
+
+                /**
+                 * データをgetするメソッド
+                 */
+                new Thread(new Runnable() {
+                    @Override
+                    public void run() {
+                        Log.d("Fucker", "run: ");
+                        try{
+                            URL url = new URL("http://54.178.206.178/group/get");
+                            HttpURLConnection con = (HttpURLConnection)url.openConnection();
+                            str = InputStreamToString(con.getInputStream());
+                            Log.d("Fucker", str);
+
+                            /**
+                             * 受け取ったJson型のデータを配列に入れ込んで、解析
+                             */
+
+                            //JSONObject jsRoot = new JSONObject(str);
+                            Log.d("Fucker", "JSON object created");
+                            JSONArray jsDataList = new JSONArray(str);
+
+                            Log.d("Fucker", "Array finished");
+
+                            for(int i = 0,jL = jsDataList.length();i < jL;i++){
+                                JSONObject jsData = jsDataList.getJSONObject(i);
+                                names[i] = jsData.getString("name");
+                                each_like[i] = jsData.getString("likes");
+                            }
+
+                        }catch(Exception ex){
+                            System.out.println(ex);
+                        }
+
+
+
+                    }
+                }).start();
+
+
+
             }
         });
+    }
 
-        getLoaderManager().restartLoader(1, null, ConnectActivity.this);
+    static String InputStreamToString(InputStream is) throws IOException{
+        BufferedReader br = new BufferedReader(new InputStreamReader(is));
+        StringBuilder sb = new StringBuilder();
+        String line;
+        while((line = br.readLine()) != null){
+            sb.append(line);
+        }
+        br.close();
+        return sb.toString();
     }
 }
