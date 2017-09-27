@@ -7,7 +7,8 @@ import android.support.design.widget.BottomNavigationView;
 import android.view.MenuItem;
 
 import com.example.shunsukesaito.sustainableweek.R;
-import com.example.shunsukesaito.sustainableweek.ThreeMainActivities.LikesActivity;
+import com.example.shunsukesaito.sustainableweek.ThreeMainActivities.ConnectActivity;
+import com.example.shunsukesaito.sustainableweek.ThreeMainActivities.ConnectActivity;
 import com.example.shunsukesaito.sustainableweek.ThreeMainActivities.MainActivity;
 import com.example.shunsukesaito.sustainableweek.ThreeMainActivities.MapActivity;
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
@@ -27,7 +28,7 @@ public class BottomNavigationViewHelper {
                 switch (item.getItemId()){
 
                     case R.id.ic_likes:
-                        Intent intent0 = new Intent(context,LikesActivity.class);
+                        Intent intent0 = new Intent(context,ConnectActivity.class);
                         context.startActivity(intent0);
                         break;
 

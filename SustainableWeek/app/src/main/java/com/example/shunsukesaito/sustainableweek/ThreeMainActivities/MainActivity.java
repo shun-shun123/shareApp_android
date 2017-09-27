@@ -31,7 +31,6 @@ import com.example.shunsukesaito.sustainableweek.Posters.Poster16;
 import com.example.shunsukesaito.sustainableweek.Posters.Poster17;
 import com.example.shunsukesaito.sustainableweek.Utils.BottomNavigationViewHelper;
 import com.example.shunsukesaito.sustainableweek.R;
-import com.example.shunsukesaito.sustainableweek.Utils.ConnectActivity;
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 
 public class MainActivity extends AppCompatActivity {
